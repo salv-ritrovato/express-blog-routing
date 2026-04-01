@@ -14,11 +14,6 @@ app.get('/', (req, res) => {
     res.send('Server del mio blog');
 });
 
-// '/bacheca' route, returns posts as JSON
-app.get('/bacheca', (req, res) => {
-    res.json(posts);
-});
-
 // Posts
 app.use('/posts', postsRouter);
 
